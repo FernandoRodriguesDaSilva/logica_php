@@ -79,7 +79,6 @@ while($i < sizeof($family)){
 	$i++;
 }
 
-
 echo "<hr>";
 
 utilizandoDoWhile();
@@ -90,5 +89,17 @@ do {
 	echo "Testando laço usando DoWhile " . $num . "<br>";
 	$num = $num + 1;
 } while ($num <= 10);
+
+echo "<hr>";
+
+
+
+
+
+
+
+
+
+
 
 ?>
