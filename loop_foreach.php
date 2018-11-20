@@ -49,9 +49,46 @@
             "valor" => 785.00,
             "titulo_curso" => "Curso DreamWeaver",
             "professor" => "Aline da Silva",
-             "descriçao" => "Utilizando Framework php para utilizar Dreamweaver no modo master"
+            "descriçao" => "Utilizando Framework php para utilizar Dreamweaver no modo master"
         ),
     ); 
+
+
+
+
+    $alunos = array(
+        array(
+            'matricula' => '255',
+            'nome' => 'Fernando Rodrigues',
+            'ano_nasc' => 1988,
+            'cidade' => 'São Carlos',
+        ),
+        array(
+            'matricula' => '233',
+            'nome' => '',
+            'ano_nasc' => '',
+            'cidade' => '',
+        ),
+        array(
+            'matricula' => '',
+            'nome' => '',
+            'ano_nasc' =>'' ,
+            'cidade' => '',
+        ),
+        array(
+            'matricula' => '',
+            'nome' => '',
+            'ano_nasc' => '',
+            'cidade' => '',
+        ),
+        array(
+            'matricula' => '',
+            'nome' => '',
+            'ano_nasc' => '',
+            'cidade' => '',
+        ),
+
+    );
     ?>
 
     <ul>
@@ -61,14 +98,35 @@
             <li>
                 Título: <?php echo $apelido['titulo_curso']; ?><br>
                 Autor: <?php echo $apelido['professor']; ?><br>
-               valor: R$ <?php echo $apelido['valor']; ?><br>
-               Descriçao do Curso: <?php print $apelido['descriçao']; ?>
+                valor: R$ <?php echo $apelido['valor']; ?><br>
+                Descriçao do Curso: <?php print $apelido['descriçao']; ?>
             </li><br>
 
         <?php } ?>
 
     </ul>
 
+
+    <h3>Array Push</h3>
+
+    <!-- Criando um novo array -->
+    <?php
+    $aluno_novo = array();
+    $aluno_novo['matricula'] = '25';
+    $aluno_novo['nome'] = 'Carla da Silva';
+    $aluno_novo['ano_nasc'] = '1996';
+    $aluno_novo['cidade'] = 'Bahia';
+    // Adicionando um novo array utilizando push
+    array_push($alunos, $aluno_novo);
+    // imprimindo com novo array
+    echo "<pre>";
+    print_r($alunos);
+    echo "</pre>"; 
+
+    ?>
+
+     <h4>Alunos Nascidos depois de 1990: </h4>
+    <br>
 
 </body>
 
